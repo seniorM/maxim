@@ -1,0 +1,75 @@
+body {
+	margin:0;
+}
+form
+{
+    width: 65%;
+    margin: 40px auto 0;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF8DC;
+}
+
+input[type="submit"]{		
+    
+    width: 120px;
+}
+
+
+#gallery{
+    width: 85%;
+    margin: 8px auto 0;
+    
+}
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+h1{
+    text-align: center;
+}
+
+
+.image {	
+    border: 1px solid ; /* Рамка вокруг фотографии */
+    padding: 2px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 8px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+    margin-left: 8px; 
+    cursor:pointer;
+    max-width: 30%;
+    height:150px;
+}
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:78%;
+	max-width:80%;
+	margin:8% 0 0 0;
+}
