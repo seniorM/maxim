@@ -65,9 +65,11 @@ if (!empty($message)) {
     </head>
     <body>
 	<h1>Галлерея</h1>
-	<p><a href="index.php">Главная</a>
 	<form method="post" enctype="multipart/form-data" action="">	    
-	                
+	    <label>Добавить фото: 
+		<input type="file" name="photo"/>
+	    </label>
+	    <input type="submit" value="Загрузить"/>            
 	
         <div id="gallery"><p><?php 
 $dir ='./photos/'; // сохраняю в переменную путь к нашей папке
@@ -81,3 +83,5 @@ $photos=scandir($dir); //если все ок, то получаю список 
         
     </body>
 </html>
+
+
