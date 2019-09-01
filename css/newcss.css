@@ -1,5 +1,6 @@
 body {
 	margin:0;
+        background-image:url(../images/84.png)
 }
 form
 {
@@ -17,7 +18,9 @@ input[type="submit"]{
     
     width: 120px;
 }
-
+#auth{
+       width: 20%;
+}
 
 #gallery{
     width: 85%;

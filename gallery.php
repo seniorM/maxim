@@ -1,12 +1,4 @@
-<?php 
-const PHOTO_MAX_SIZE = 0.1 * 1024 * 1024;
-const PHOTO_AVAILABLE_TYPES = array(
-    'image/jpeg',
-    'image/png',
-);
-const PHOTO_DIR = 'photos';
 
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,9 +10,9 @@ const PHOTO_DIR = 'photos';
     </head>
     <body>
 	<h1>Галлерея</h1>
-	<p><a href="index.php">Главная</a>
+        
 	<form method="post" enctype="multipart/form-data" action="">	    
-	                
+	              <p><a href="index.php">Главная</a></p>  
 	
         <div id="gallery"><p><?php 
 $dir ='./photos/'; // сохраняю в переменную путь к нашей папке

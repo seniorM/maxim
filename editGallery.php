@@ -1,4 +1,6 @@
 <?php 
+require 'auth.php';
+
 const PHOTO_MAX_SIZE = 0.1 * 1024 * 1024;
 const PHOTO_AVAILABLE_TYPES = array(
     'image/jpeg',
@@ -58,13 +60,16 @@ if (!empty($message)) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Галлерея</title>
+        <title>Редактирование галлереи</title>
 	<link href="css/newcss.css" rel="stylesheet" type="text/css"/>
         <SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 	<script type="text/javascript" src="js/popup_img.js"></script>
     </head>
     <body>
-	<h1>Галлерея</h1>
+	<h1>Редактирование галлереи</h1>
+       <div id="user">Hello, <?=$_SESSION['admin']?>		    
+                    </div>
+		<p><a href="index.php">Главная</a> | <a href="editeMain.php">Редактирование главной</a> | <a href="admin.php?do=logout">Выход</a></p>
 	<form method="post" enctype="multipart/form-data" action="">	    
 	    <label>Добавить фото: 
 		<input type="file" name="photo"/>
