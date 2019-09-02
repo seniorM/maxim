@@ -2,7 +2,7 @@ body {
 	margin:0;
         background-image:url(../images/84.png)
 }
-p{
+#textMain{
     text-align: center;
 }
 form
