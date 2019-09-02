@@ -18,7 +18,7 @@ $text = file_get_contents('./index.php');
 		    <p><a href="index.php">Главная</a> | <a href="editGallery.php">Редактирование галлереи</a> | <a href="admin.php?do=logout">Выход</a></p>
 <hr />
 <form method="post">
-    <textarea cols="50" rows="5" name="text"><?php echo htmlspecialchars($text); ?></textarea>
+    <textarea cols="250" rows="5" name="text"><?php echo htmlspecialchars($text); ?></textarea>
   <input type="submit" value="Сохранить">
 </form>
 		</body>
